@@ -1,17 +1,18 @@
 Summary:	Log file navigator
 Name:		lnav
-Version:	0.9.0
+Version:	0.10.0
 Release:	1
 License:	BSD
 Group:		Applications
 Source0:	https://github.com/tstack/lnav/releases/download/v%{version}/%{name}-%{version}.tar.bz2
-# Source0-md5:	522d7eff6e4728fa56e677e681c1f5b4
+# Source0-md5:	213414460c6925af0da5669816becad6
 URL:		https://lnav.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	bzip2-devel
 BuildRequires:	curl-devel >= 7.23.0
 BuildRequires:	jemalloc-devel
+BuildRequires:	libarchive-devel
 # c++14
 BuildRequires:	libstdc++-devel >= 6:5.0
 BuildRequires:	ncurses-devel
@@ -20,8 +21,8 @@ BuildRequires:	re2c
 BuildRequires:	readline-devel
 BuildRequires:	sqlite3-devel >= 3.9.0
 BuildRequires:	zlib-devel
-Requires:	sqlite3-libs >= 3.9.0
 Requires:	curl-libs >= 7.23.0
+Requires:	sqlite3-libs >= 3.9.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
