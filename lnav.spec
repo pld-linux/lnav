@@ -1,11 +1,11 @@
 Summary:	Log file navigator
 Name:		lnav
-Version:	0.11.2
+Version:	0.12.0
 Release:	1
 License:	BSD
 Group:		Applications
 Source0:	https://github.com/tstack/lnav/releases/download/v%{version}/%{name}-%{version}.tar.bz2
-# Source0-md5:	99df706615bb3999eca0a2431007aa7d
+# Source0-md5:	8c2941a972c5d0780ea0e831ceafed6f
 URL:		https://lnav.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
