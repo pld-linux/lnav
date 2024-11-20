@@ -1,11 +1,11 @@
 Summary:	Log file navigator
 Name:		lnav
-Version:	0.12.0
+Version:	0.12.3
 Release:	1
 License:	BSD
 Group:		Applications
 Source0:	https://github.com/tstack/lnav/releases/download/v%{version}/%{name}-%{version}.tar.bz2
-# Source0-md5:	8c2941a972c5d0780ea0e831ceafed6f
+# Source0-md5:	d388a957e8114436b0d362d016d7ddef
 URL:		https://lnav.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -13,8 +13,8 @@ BuildRequires:	bzip2-devel
 BuildRequires:	curl-devel >= 7.23.0
 BuildRequires:	jemalloc-devel
 BuildRequires:	libarchive-devel
-# c++14
-BuildRequires:	libstdc++-devel >= 6:5.0
+# c++17
+BuildRequires:	libstdc++-devel >= 6:8
 BuildRequires:	ncurses-devel
 BuildRequires:	pcre2-8-devel
 BuildRequires:	re2c
@@ -45,6 +45,7 @@ efficiently zero in on problems.
 %{__autoheader}
 %{__automake}
 %configure \
+	ac_cv_path_CARGO_CMD= \
 	--disable-silent-rules \
 	--disable-static \
 	--with-jemalloc
